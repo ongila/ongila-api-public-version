@@ -1,0 +1,45 @@
+{
+    "package": "ongila-erp-sample",
+    "version": "1.0.0",
+    "prepared_on": "2026-08-10",
+    "purpose": "Sanitized representative ERP API source for review",
+    "runtime": {
+        "php": "^8.0",
+        "laravel": "^8.83",
+        "authentication_boundary": "Laravel Sanctum"
+    },
+    "scope": [
+        {
+            "area": "inventory_catalog",
+            "features": ["category", "unit", "warehouse", "product"],
+            "operations": 20
+        },
+        {
+            "area": "human_resources",
+            "features": ["shift", "holiday", "yearly_calendar"],
+            "operations": 15
+        },
+        {
+            "area": "finance_reference_data",
+            "features": ["currency", "currency_rate"],
+            "operations": 12
+        }
+    ],
+    "business_operations": 47,
+    "excluded": [
+        "identity_and_otp",
+        "roles_and_permissions",
+        "tenant_switching",
+        "attendance_and_payroll",
+        "financial_transactions_and_journals",
+        "stock_movements_costing_and_reconciliation",
+        "reports_imports_exports_and_attachments",
+        "credentials_logs_and_production_data"
+    ],
+    "data_classification": "synthetic demonstration data only",
+    "test_execution": {
+        "suite_included": true,
+        "executed_during_packaging": false,
+        "reason": "PHP and Composer runtimes were unavailable in the packaging environment"
+    }
+}

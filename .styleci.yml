@@ -1,0 +1,8 @@
+php:
+  preset: laravel
+risky: false
+version: 8
+finder:
+  exclude:
+    - "database/seeders"
+    - "storage"
